@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+  display: none;
+}
+.modal.modal--open {
+  display: block;
+}
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal__header {
+  font-weight: bold;
+}
+
+
+
+/* Block Accordion */
+.accordion {
+  border: 1px solid lightgrey;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+/* Element - Header */
+.accordion__header {
+  padding: .5rem;
+  background-color: rgb(254, 248, 240);
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Element - Content */
+.accordion__content {
+  border-top: 1px solid lightgrey;
+  padding: .5rem;
+  display: none;
+}
+/* Modifier - Open */
+.accordion--open .accordion__content {
+  display: block;
+}
+.accordion--open .accordion__header {
+  background-color: rgb(175, 158, 223);
+}
+
+.accordions .accordion:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+.accordions .accordion:not(:last-of-type) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+
+
+/* Block */
+.btn {
+  background-color: purple;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: 1rem;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+/* .btn--outlined {
+  bor
+} */
+
+
